@@ -1,0 +1,8 @@
+numero <- ler numero 
+
+fatorial <- 1
+
+para item de 1 ate numero 
+    fatorial *= item 
+
+imprima (O fatorial de {numero} é {fatorial})
