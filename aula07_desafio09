@@ -1,0 +1,12 @@
+notas <- []
+para item em range gerando 5
+    nota <- em float leia a nota como (Digite a {item+1}º nota)
+    notas.append(nota)
+
+menor_nota <- minima(notas)
+notas.remove(menor_nota)
+
+media <- sum(notas) / len(notas)
+
+imprima(A menor nota {menor_nota} foi excluida)
+imprima (A media das 4 maiores notas é {media:.2})
