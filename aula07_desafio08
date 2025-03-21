@@ -1,0 +1,5 @@
+texto <- ler o texto 
+
+texto_invertido <- texto [::-1]
+
+imprima (f"String invertida: {texto_invertido}")
