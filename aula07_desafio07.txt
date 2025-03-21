@@ -1,0 +1,17 @@
+numero <- ler numero 
+
+eh_primo <- verdadeiro
+
+se numero < 2 
+    eh_primo <- falso 
+se não 
+    ()
+    para item em (2 , inteiro(numero ** 5 ) + 1)
+        se o numero % item == 0 
+            eh_primo <- falso 
+            quebra 
+
+se eh_primo 
+    imprima (numero é um número primo)
+se não 
+    imprima (numero não é um número primo)
