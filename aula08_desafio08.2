@@ -1,0 +1,24 @@
+import sys
+
+def contar_palavras(texto):
+    """Conta o número de palavras em um texto"""
+    palavras = texto.split()  # Divide o texto em palavras
+    return len(palavras)  # Retorna a quantidade de palavras
+
+def main():
+    # Verifica se o usuário forneceu argumentos
+    if len(sys.argv) < 2:
+        print("Python é uma linguagem incrivel!")
+        return
+
+    # Junta os argumentos da linha de comando em uma única string
+    texto = " ".join(sys.argv[1:])
+
+    # Conta as palavras e exibe o resultado
+    quantidade_palavras = contar_palavras(texto)
+    print(f"O texto contém {quantidade_palavras} palavras.")
+
+# Garante que o main() seja executado apenas se o script for chamado diretamente
+if __name__ == "__main__":
+    main()
+    
