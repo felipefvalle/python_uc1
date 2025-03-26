@@ -1,0 +1,24 @@
+import sys 
+
+"""Função faz com o que a palavra seja lida de traz para frente e aceitar letras minusculas."""
+"""Verifica se a palavra é um palindromo."""
+
+def palindromo(palavra):
+    palavra = palavra.lower()
+    return palavra == palavra[::-1]
+
+"""Verifica se o usuario recebeu um argumento."""
+
+def main():
+    if len(sys.argv) < 2:
+        print("\nErro - Nenhuma palavra foi forcenida. (Use o terminal)")
+        return
+
+palavra = (sys.argv)[1]
+
+"""Verifica se é palindromo e mostra o resultado."""   
+
+if palindromo (palavra):
+    print(f"A palavra {palavra} é um palindromo.")
+else:
+    print(f"A palavra {palavra} não é um palindromo.")
