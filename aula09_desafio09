@@ -1,0 +1,56 @@
+#Aula 09 - Desafio#
+
+"""Soma de Elementos"""
+
+def soma():
+    
+    print("\n\tSoma dos Números Inteiros.")
+    print()
+
+    numeros = []
+    
+    for i in range(5):
+        numero = int(input(f"Digite o {i+1}º número inteiro: "))
+        numeros.append(numero)
+    
+    soma = sum(numeros)
+    print(f"A soma de todos os números é: {soma}")
+    print()
+
+"""Números ìmpares de um Intervalo"""
+
+def impares_intervalados():
+    print("\n\tNúmeros Impares de 1 a 50")
+    print()
+    impares = tuple(range(1, 51, 2))
+    print("Números ímpares de 1 a 50:", impares)
+    print()
+
+"""Inserção Ordenada"""
+
+def ordenados():
+    
+    print("\n\tNúmeros em Ordem")
+    print()
+
+    numeros = []
+    
+    for i in range(5):
+        
+        numero = int(input(f"Digite o {i+1}º número inteiro: "))
+        
+        if not numeros or numero >= numeros[-1]:
+            numeros.append(numero)
+        else:
+            for j in range(len(numeros)):
+                if numero < numeros[j]:
+                    numeros.insert(j, numero)
+                    break
+    
+    print(f"Números em ordem: {numeros}")
+    print()
+
+
+soma()
+impares_intervalados()
+ordenados()
